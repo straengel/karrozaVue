@@ -1,0 +1,203 @@
+/* -------------------------------------------------------------------------------
+
+general
+
+----------------------------------------------------------------------------------*/ 
+body {
+    font-family: "Helvetica Neue Style", sans-serif;
+    min-height: 99vh;
+    background: url(/img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+.logo {
+    display: block;
+}
+
+/* -------------------------------------------------------------------------------
+
+header
+
+----------------------------------------------------------------------------------*/ 
+header {
+    background-color: #0F73E8;
+    height: 140px;
+}
+header .flexItems {
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+header .rootFlex {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    justify-content: flex-end;
+}
+header .headerLogo {
+    width: 220px;
+    max-width: 100%;
+}
+header .headerIn:hover, header .headerReg:hover {
+    border-bottom: 1px solid #ffffff;
+}
+header .headerCli {
+    display: block;
+    text-transform: none;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media(min-width: 300px){
+    .headerLogo {
+        margin: 0 auto 15px;
+    }
+    .inOut {
+        margin: 0 0 15px;
+    }
+    header .requestForAll {
+        margin: 0 0 15px;
+        width: 260px;
+        max-width: 100%;
+    }
+}
+@media(min-width: 768px){
+    .headerLogo {
+        margin: 0;
+    }
+    .inOut {
+        margin: 0;
+    }
+    header .requestForAll {
+        margin: 10px 0 0 0;
+    }
+}
+@media(min-width: 992px){
+    header .requestForAll {
+        margin: 0;
+    }
+}
+@media(min-width: 1200px){
+    header .requestForAll {
+        margin: 0 0 0 30px;
+    }
+}
+/* -------------------------------------------------------------------------------
+
+main
+
+----------------------------------------------------------------------------------*/ 
+
+/* -------------------------------------------------------------------------------
+
+footer
+
+----------------------------------------------------------------------------------*/ 
+
+footer {
+    background-color: #0F73E8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+}
+footer .flexItems {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+}
+footer .logo {
+    display: inline-block;
+}
+footer .socIcons {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.copyRight {
+    color: #6b8ebb;
+    font-size: 16px;
+    width: 115px;
+}
+.footerColumn a {
+    display: block;
+    
+}
+footer .footerColumn a:hover {
+    text-decoration:underline;
+}
+.footerLink a {
+    color: #6b8ebb;
+}
+.footerColumn {
+    display: inline-block;
+    max-width: 100%;
+}
+footer .blockLink {
+
+}
+.footerInfo a {
+    color: #ffffff;
+}
+.footerInfo a:hover {
+    color: #ffffff;
+}
+.footerLink a:hover {
+    color: #fad644;
+}
+@media(min-width: 300px){
+    .copyRight {
+        margin: 0 auto 20px;
+        display: block;
+    }
+    footer .logo {
+        margin: 0 0 30px;
+    }
+    .footerLink {
+        margin: 0 10px 15px !important;
+    }
+    .footerColumn {
+        margin: 0 10px 15px;
+        text-align: center;
+    }
+}
+@media(min-width: 768px){
+    .copyRight {
+        margin: 0 0 0 70px;
+        display: inline;
+    }
+    .footerLink {
+        margin: 0 0 0 50px !important;
+    }
+    .footerColumn {
+        text-align: left;
+    }
+
+}
+@media(min-width: 992px){
+    footer .logo {
+        margin: 0;
+    }
+    .copyRight {
+        margin-left: 70px;
+    }
+    .footerColumn {
+        margin: 0;
+    }
+}
+@media(min-width: 1200px){
+    .copyRight {
+        margin-left: 70px;
+    }
+    .footerColumn {
+        margin: 0;
+    }
+
+}

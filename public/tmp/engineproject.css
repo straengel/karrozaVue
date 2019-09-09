@@ -1,0 +1,85 @@
+.engineClients img {
+    max-width: 100%;
+}
+@media(min-width: 300px){
+    .engineClients img {
+        display: none;
+    }
+    .sendRequest {
+        color: black;
+        font-size: 11px;
+        background-color: #fad644;
+        width: 100%;
+        max-width: 275px;
+        text-align: center;
+        line-height: 40px;
+        border: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .favourableOffer {
+        font-size: 21px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .engineText p {
+        font-size: 13px;
+        padding-bottom: 43px;
+        text-align: center;
+    }
+}
+@media(min-width: 992px){
+    .engineClients img {
+        display: block;
+    }
+    .sendRequest {
+        color: black;
+        font-size: 17px;
+        background-color: #fad644;
+        width: 100%;
+        max-width: 520px;
+        text-align: center;
+        line-height: 53px;
+        border: none;
+        font-weight: bold;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .favourableOffer {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .engineText p {
+        font-size: 18px;
+        padding-bottom: 55px;
+        text-align: left;
+    }
+}
+@media(min-width: 1200px){
+
+}
+#economyChoose .container {
+    max-width: 1058px;
+    width: 100%;
+}
+.favourableOffer {
+    padding-bottom: 33px;
+}
+@media(min-width: 300px){
+    .engineClients img {
+        max-width: 100%;
+    }
+}
+@media(min-width: 992px){
+    .engineClients img {
+        max-width: 100%;
+    }
+}
+@media(min-width: 1200px){
+
+}

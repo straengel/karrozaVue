@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaRegular.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaBlack.ttf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaBlackItalic.ttf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaBold.ttf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaBoldItalic.ttf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaItalic.ttf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaLight.ttf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaLightItalic.ttf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaMedium.ttf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaThin.ttf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaThinItalic.ttf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaUltraLight.ttf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Style";
+    src: url("../fonts/HelveticaNeueCyr/HelveticaUltraLightItalic.ttf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Zing";
+    src: url("../fonts/HelveticaNeueCyr/ZingRustDemo-Base.otf") format("opentype");
+}

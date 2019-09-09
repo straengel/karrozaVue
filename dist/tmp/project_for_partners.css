@@ -1,0 +1,215 @@
+header {
+    min-height: 122px;
+    background-color: #1e85ef;
+}
+header .row> .rootFlex {
+    min-height: 122px;
+}
+.headerLogo {
+    width: 220px;
+    max-width: 100%;
+}
+.inOut {
+    text-transform: uppercase;
+}
+.headerIn {
+    color: black;
+    font-weight: bold;
+}
+.headerReg {
+    color: #fad644;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #71a3af;
+}
+@media(min-width: 300px){
+    .headerLogo {
+        margin: 0 auto 15px;
+    }
+    .inOut {
+        margin: 0 0 15px;
+    }
+    header .requestForAll {
+        margin: 0 0 15px;
+        width: 260px;
+        max-width: 100%;
+    }
+}
+@media(min-width: 768px){
+    .headerLogo {
+        margin: 0;
+    }
+    .inOut {
+        margin: 0;
+    }
+    header .requestForAll {
+        margin: 10px 0 0 0;
+    }
+}
+@media(min-width: 992px){
+    header .requestForAll {
+        margin: 0;
+    }
+}
+@media(min-width: 1200px){
+    header .requestForAll {
+        margin: 0 0 0 30px;
+    }
+}
+#provide {
+    background: url("../img/background_header_for_partners.jpg") no-repeat bottom center;
+    /*background-size: 100% auto;*/
+    min-height: 727px;
+    padding-bottom: 30px;
+}
+.provideH {
+    color: #303942;
+    width: 630px;
+    max-width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 39px;
+}
+.howToWorkH {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.schemePart {
+    position: relative;
+    background: url("../img/background_scheme.png") no-repeat center;
+}
+.schemePart:after,
+.schemePart:before {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: top left;
+}
+.schemePartPartners1:before {
+    background-image: url("../img/scheme_number_1.png");
+}
+.schemePartPartners2:before {
+    background-image: url("../img/scheme_number_2.png");
+}
+.schemePartPartners3:before {
+    background-image: url("../img/scheme_number_3.png");
+}
+.schemePartPartners4:before {
+    background-image: url("../img/scheme_number_4.png");
+}
+.howToWorkTitle {
+    color: #000;
+    display: block;
+}
+.schemePart img {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+}
+@media(min-width: 300px) {
+    .schemePart1:after {
+        display: none;
+    }
+    .schemePart2:after {
+        display: none;
+    }
+    .schemePart4:after {
+        display: none;
+    }
+    .schemePart5:after {
+        display: none;
+    }
+    .schemePart:after {
+        display: none;
+    }
+    .schemePart {
+        background-size: contain;
+        width: 252px;
+        height: 248px;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .howToWorkH {
+        font-size: 24px;
+        margin: 0 0 50px;
+    }
+    .schemePart:after,
+    .schemePart:before {
+        content: '';
+    }
+    .schemePart:before {
+        display: block;
+    }
+    .schemePart:after {
+        width: 104px;
+        height: 8px;
+        top: 50%;
+        right: 0;
+        margin:-91px -45px 0 2px;
+        display: none;
+    }
+    .schemePart:before {
+        width: 57px;
+        height: 97px;
+        left: 13px;
+        top: 15px;
+    }
+    .schemePart img {
+        margin: 28px 0 20px;
+    }
+    .howToWorkTitle {
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+        max-width: 225px;
+    }
+}
+@media(min-width: 992px){
+    .schemePartPartners1:after {
+        background-image: url("../img/transition.png");
+        position: absolute;
+    }
+    .schemePartPartners2:after {
+        background-image: url("../img/transition.png");
+        position: absolute;
+    }
+    .schemePartPartners3:after {
+        background-image: url("../img/transition.png");
+        position: absolute;
+    }
+    .schemePartPartners4:after {
+        background-image: url("../img/transition.png");
+        position: absolute;
+    }
+    .howToWorkH {
+        font-size: 30px;
+        margin: 0 0 68px;
+    }
+    .schemePart {
+        background-size: contain;
+        width: 305px;
+        height: 296px;
+        position: relative;
+        margin-bottom: 65px;
+    }
+    .schemePart img {
+        margin: 55px 0 20px;
+    }
+    .howToWorkTitle {
+        font-size: 18px;
+        display: block;
+        margin: 0 auto;
+        max-width: 225px;
+    }
+    .schemePart:before {
+        width: 57px;
+        height: 97px;
+        left: 35px;
+        top: 35px;
+    }
+    .schemePart:after {
+        display: block;
+    }
+}

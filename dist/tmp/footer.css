@@ -1,0 +1,35 @@
+footer {
+    background-color: #323a43;
+}
+footer .rootFlex {
+    min-height: 184px;
+}
+.copyRight {
+    color: #6b8ebb;
+    font-size: 16px;
+    margin-left: 70px;
+}
+.footerLink {
+    padding-left: 31px;
+}
+.footerColumn a {
+    display: block;
+    text-decoration:underline;
+}
+.footerLink a {
+    color: #6b8ebb;
+}
+.footerColumn {
+    display: inline-block;
+    max-width: 100%;
+    text-align: left;
+}
+.footerInfo a {
+    color: #ffffff;
+}
+.footerInfo a:hover {
+    color: #ffffff;
+}
+.footerLink a:hover {
+    color: #fad644;
+}
