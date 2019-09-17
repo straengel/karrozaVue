@@ -1,7 +1,8 @@
 <template>
   <div class="firstForm" id="form-template">
     <h1>все автомaгaзины тут</h1>
-    <input id='detail' type="text" placeholder="Какую автозапчасть вы ищите?" v-model="detail" required>
+    <p class="hide">Обязательное поле</p>
+    <input id='detail' type="text" placeholder="Какую автозапчасть вы ищите?" v-model="detail" ref="input" required>
     <button class="search" @click="showDetail()">Найти</button>
     <label for="detail">Например: клапан вентиляции, масло SHELL Helix</label>
     <button class="addImg"><i class="fa fa-paperclip" aria-hidden="true"></i>{{ msg }}<input type="file" @change="imgUrl($event.target.value)" > </button>
@@ -17,13 +18,13 @@
         <div class="divImg">
           <img src="./../assets/shipped.png" alt="">
         </div>
-        <p>Кэшбэк до 5%</p>
+        <p>Бесплатную </br>доставку</p>
       </div>
       <div class="plus">
         <div class="divImg">
           <img src="./../assets/transfer.png" alt="">
         </div>
-        <p>Бесплатную доставку</p>
+        <p>Кэшбэк </br>до 5%</p>
       </div>
     </div>
   </div> 
@@ -42,11 +43,16 @@ export default {
   },
   methods: {
     showDetail() {
-      this.goNext({
-        detail: this.detail,
-        formNumber: 1,
-        msg: this.msg
-      })
+      if (this.detail == '') {
+        this.$refs.input.style.border = '1px solid red';
+      } else {
+        this.goNext({
+          detail: this.detail,
+          formNumber: 1,
+          msg: this.msg
+        })
+      }
+      
     },
     imgUrl(value) {
       this.msg = value.slice(12, 35)
@@ -60,7 +66,7 @@ export default {
 main input#detail {
   width: 445px;
   height: 45px;
-  border: 1px solid #0067D7;
+  border: 1px solid #0F73E8;
   border-radius: 7px;
   padding: 5px 20px;
   color: #000000;
@@ -68,7 +74,7 @@ main input#detail {
 main .search {
   width: 100px;
   height: 45px;
-  background-color: #0067D7;
+  background-color: #0F73E8;
   margin-left: 10px;
   border-radius: 7px;
   color: #ffffff;
@@ -81,7 +87,7 @@ main label {
 main .addImg {
   width: 205px;
   display: flex;
-  background-color: #0067D7;
+  background-color: #0F73E8;
   color: #ffffff;
   border-radius: 7px;
   padding: 5px 8px;
@@ -143,4 +149,58 @@ main input[type=file] {
   top: 0;
   left: 0;
 }
+@media(max-width: 768px) { 
+  main input#detail {
+    width: 100%;
+  }
+  main label {
+    margin: 3px;
+    position: absolute;
+    left: 0;
+    top: 98px;
+    font-size: 12px;
+  }
+  main .search { 
+    width: 100%;
+    margin-left: 0;
+    margin-top: 25px
+  }
+  main .addImg {
+    display: none;
+  }
+  main h3 {
+    margin: 25px auto;
+    border-bottom: none;
+    font-size: 15px;
+  }
+  main .blockPlus {
+    display: block;
+    
+  }
+  main .blockPlus .plus {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  main .blockPlus .divImg::before {
+      display: none;
+  }
+  main .blockPlus img {
+    width: 60px;
+    padding: 0;
+    float: left;
+    margin-left: 10px;
+  }
+  main .blockPlus .plus p {
+    width: auto;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
+@media(max-width: 768px) {
+}
+
+
 </style>

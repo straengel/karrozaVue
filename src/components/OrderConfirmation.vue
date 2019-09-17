@@ -4,12 +4,12 @@
   <input id='detail' type="text" placeholder="Какую автозапчасть вы ищите?" v-model="form.detail" readonly required><i class=" up-i fa fa-pencil" aria-hidden="true" @click="editInput($event.target)"></i>
   <button class="addImg"><i class="fa fa-paperclip" aria-hidden="true"></i>{{ form.msg }}<input type="file" @change="imgUrl($event.target.value)" > </button>
   <div class="mmy">
-    <span>Марка: </span><p> {{form.mark}} </p>
-    <span>Модель: </span><p> {{form.model}} </p>
-    <span>Год: </span><p> {{form.year}} </p>
+    <p><span>Марка: </span> {{form.mark}} </p>
+    <p><span>Модель: </span> {{form.model}} </p>
+    <p><span>Год: </span> {{form.year}} </p>
   </div>
   <div class="vin">
-    <span>VIN: </span><p><input class="infoLog " type="text" readonly v-model="form.VIN" required><i class="fa fa-pencil" aria-hidden="true" @click="editInput($event.target)"></i></p>
+    <p><span>VIN: </span><input class="infoLog " type="text" readonly v-model="form.VIN" required><i class="fa fa-pencil" aria-hidden="true" @click="editInput($event.target)"></i></p>
   </div>
   
   <div class="personal-data">
@@ -20,12 +20,12 @@
   <div class="delivery-block">
     <h3>Доставка</h3>
     <div class="delivery-label-block">
-      <label class="radio-p">
+      <label class="radio-p radio-1">
         <input class="radio-input" name="delivery" type="radio" value="delivery" checked="checked" required>
         <span>Мне нужна доставка</span>
         Бесплатно в пределах районав котором расположен магазин. 150 рублей за пределы района.
       </label>
-      <label class="radio-p">
+      <label class="radio-p radio-2">
         <input class="radio-input" name="delivery" type="radio" value="not-delivery" required>
         <span>Заберу сам</span>
         Бесплатно.
@@ -100,7 +100,7 @@ main #order-confirmation-template h3 {
   /* display: flex; */
 }
 main #order-confirmation-template .addImg {
-  width: 205px;
+  width: 210px;
   display: flex;
   background-color: #0067D7;
   color: #ffffff;
@@ -240,5 +240,84 @@ main #order-confirmation-template i.up-i {
 }
 main #order-confirmation-template .fa-paperclip {
   color: #fff
+}
+@media(max-width: 768px) {
+  main #info-acc-template input {
+    width: 100%;
+  }
+  main #order-confirmation-template h2 {
+    font-size: 18px;
+  }
+  main #order-confirmation-template .addImg {
+    display: none;
+  }
+  main #order-confirmation-template i.up-i {
+    top: 57px;
+    right: 27px;
+  }
+  main #order-confirmation-template .mmy {
+    margin: 0;
+    float: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+  main #order-confirmation-template p {
+    margin: 0;
+  }
+  main #order-confirmation-template span {
+    margin: 0;
+    margin-right: 5px;  
+    font-size: 14px;  
+  }
+  main #order-confirmation-template .vin {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  main #order-confirmation-template i {
+    float: right;
+  }
+  main #order-confirmation-template .infoLog {
+    width: 160px;
+  }
+  main #order-confirmation-template h3 {
+    font-size: 16px;
+  }
+  main #order-confirmation-template .delivery-block [type="radio"] + span[data-v-25e7e923]:before {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 10px;
+    left: -10px;
+    top: -10px;
+    /* border: 3px solid #000; */
+  }
+  main #order-confirmation-template .delivery-block [type="radio"] + span:before {
+    border: 1px solid #000;
+  }
+  main #order-confirmation-template .delivery-block [type="radio"]:checked + span:before {
+    box-shadow: 0px 0px 5px 2px rgba(15,115,232,1);
+    border: none;
+  }
+  main #order-confirmation-template .delivery-block .delivery-label-block {
+    width: 100%;
+  }
+  main #order-confirmation-template .delivery-block .delivery-label-block label {
+    margin: 0;
+  }
+  main #order-confirmation-template .delivery-block .delivery-label-block .radio-1 {
+    width: 55%;
+  }
+  main #order-confirmation-template .delivery-block .delivery-label-block .radio-2 {
+    width: 25%;
+  }
+  main #order-confirmation-template .delivery-block .delivery-label-block .radio-p {
+    margin: 5px 15px;
+    text-align: center;
+  }
+  main #order-confirmation-template .btnNext {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 </style>

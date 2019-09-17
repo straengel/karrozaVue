@@ -11,7 +11,7 @@
       <label><input type="checkbox" id="three" value="Third checkbox" required>Third checkbox</label>
     </div>
     <button class="btnNext" @click="saveInfo()">Далее</button>
-    <label for="VIN">VIN-номер нужен для того, чтобы сотрудник магазина мог более точно подобрать нужные вам автозапчасти и сделать предложение как можно быстрее.</label>
+    <label class="forVin" for="VIN">VIN-номер нужен для того, чтобы сотрудник магазина мог более точно подобрать нужные вам автозапчасти и сделать предложение как можно быстрее.</label>
   </div> 
 </template>
 
@@ -148,6 +148,35 @@ background-image: url(./../assets/scroll.png)
 }
 ::-webkit-scrollbar{
   width: 10px;
+}
+@media(max-width: 768px) {
+  main #vin-template label {
+    left: 0;
+    font-size: 14px;
+  }
+  main #vin-template .vin {
+    width: 100%;
+  }
+  main #vin-template .btnNext {
+    margin: 0;
+    width: 100%;
+    margin-top: 90px;
+  }
+  main #vin-template #checkboxes {
+    width: 100%;  
+    height: 100px;
+    z-index: 300;
+  }
+  main #mainForm input {
+    width: auto;;
+  }
+  main #vin-template label.forVin {
+    position: absolute;
+    top: 220px;
+    width: 100%;  
+  }
+      
+    
 }
 </style>
 

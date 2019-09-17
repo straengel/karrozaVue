@@ -102,4 +102,33 @@ main #sent-order-template button {
   background-color: #0F73E8;
   margin-top: 20px;
 }
+@media(max-width: 768px) {
+  main #sent-order-template input,
+  main #sent-order-template button {
+    width: 100%;
+  }
+  main #sent-order-template img.ellipse {
+    top: -25px;
+    left: 130px;
+  }
+  main #sent-order-template img.vector {
+    top: 19px;
+    left: 175px;
+  }
+  main #sent-order-template .input-acc {
+    width: 100%;
+    margin-top: 30px;
+  }
+  main #sent-order-template p.text-header {
+    width: 100%;
+  }
+}
+@media(max-width: 425px) {
+  main #sent-order-template img.ellipse {
+    left: 77px;
+  }
+  main #sent-order-template img.vector {
+    left: 124px;
+  }
+}
 </style>

@@ -20,7 +20,7 @@
     <Model v-if="formNumber === 2" :form="form" :goNext="goNext"/>
     <Year v-if="formNumber === 3" :goNext="goNext"/>
     <VIN v-if="formNumber === 4" :goNext="goNext"/>
-    <InfoAccount v-if="formNumber === 5" :goNext="goNext"/>
+    <InfoAccount v-if="formNumber === 5" :goNext="goNext" :valid="valid"/>
     <OrderConfirmation v-if="formNumber === 6" :form="form" :goNext="goNext"/>
     <SentOrder v-if="formNumber === 7" :form="form" :goNext="goNext"/>
     
@@ -98,6 +98,13 @@ export default {
       }
       this.formNumber = this.formNumber - 1;
       
+    },
+    valid(inp) {
+      if (inp.type == 'email') {
+        return (/^[\w-]+@[a-z]+.[a-z]+$/gi).test(inp.value);
+      } else if(inp.type == 'tel') {
+        return (/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/).test(inp.value);
+      }
     }
   }
 }
@@ -110,7 +117,7 @@ main #mainForm {
   display: block;
   justify-content: center;
   text-align: center;
-  margin: 80px auto 0 auto;
+  margin: 70px auto 70px auto;
 }
 main #mainForm h1 {
   width: 100%;
@@ -186,5 +193,35 @@ main .headerSiteBar .steps {
 }
 main p {
   margin: 0;
+}
+
+@media(max-width: 768px) {
+  main #mainForm {
+      width: 410px;
+      margin: 40px auto;
+  }  
+  main #mainForm h1 {
+      font-size: 20px;
+  }
+  main #mainForm input {
+      width: 300px;
+  }
+  main .headerSiteBar h2 {
+    font-size: 20px;
+  }
+  main .headerSiteBar button {
+    top: 35px;
+    left: 0;
+  }
+  main .siteBar {
+    margin-left: 15%;
+    width: 85%;
+  }
+}
+@media(max-width: 425px) {
+  main #mainForm {
+    width: 300px;
+  }
+
 }
 </style>
